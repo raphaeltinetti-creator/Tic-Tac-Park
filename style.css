@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=IBM+Plex+Serif:wght@400;600&family=Inter:wght@400;600&family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#cabecalho {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.titulo1 {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+#principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+#sessao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part1, .part2 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 40px;
+}
+
+.item1, .item2, .item3, .item4 {
+    padding: 12px;
+}
+
+.titulo2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.text {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 18px;
+}
+
+.part3 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 50px;
+}
+
+.botao {
+    margin: 15px;
+    padding: 30px;
+    background-color: white;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    border-radius: 12px;
+}
+
+.botao:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#res1 {
+    margin: 20px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 23px;
+}
+
+#res2 {
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 23px;
+}
+
+.gratis {
+    background-color: #d4f5dc;
+    color: #1b5e20;
+}
+
+.normal {
+    background-color: #dbeafe;
+    color: #0d3b8a;
+}
+
+.teto {
+    background-color: #ffe0b2;
+    color: #b71c1c;
+    font-weight: bold;
+}
+
+.erro {
+    border: 2px solid red;
+    background-color: #ffe5e5;
+}
+
+#rodape {
+    text-align: center;
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .part1, .part2, .part3 {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #sessao {
+        width: 100%;
+    }
+
+    .titulo1 {
+        font-size: 26px;
+    }
+
+    .titulo2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    #cabecalho {
+        height: 80px;
+    }
+
+    #principal {
+        margin: 5% 4%;
+    }
+
+    .titulo1 {
+        font-size: 22px;
+    }
+
+    .titulo2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .part1, .part2 {
+        margin-top: 24px;
+    }
+
+    .part3 {
+        margin-top: 30px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .botao {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    #res1 {
+        font-size: 18px;
+    }
+
+    #res2 {
+        font-size: 18px;
+        padding: 12px 16px;
+    }
+}

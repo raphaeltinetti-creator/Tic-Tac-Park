@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTac Park</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <h1 class="titulo1">TicTac Park</h1>
+    </header>
+    <main id="principal">
+        <section id="sessao">
+            <article class="part1">
+                <h2 class="titulo2">Entrada</h2>
+                <label class="text" for="valor1">Hora de entrada:</label>
+                <input class="item1" type="number" name="number1" id="valor1">
+                <label class="text" for="valor2">Minuto de entrada:</label>
+                <input class="item2" type="number" name="number2" id="valor2">
+            </article>
+
+            <article class="part2">
+                <h2 class="titulo2">Saída</h2>
+                <label class="text" for="valor3">Hora de saída:</label>
+                <input class="item3" type="number" name="number3" id="valor3">
+                <label class="text" for="valor4">Minuto de saída:</label>
+                <input class="item4" type="number" name="number4" id="valor4">
+            </article>
+
+            <article class="part3">
+                <input class="botao" type="button" value="Calcular" onclick="calcular()">
+            </article>
+            <div id="res1"></div>
+            <div id="res2"></div>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <p>&copy; Raphael Tinetti</p>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
